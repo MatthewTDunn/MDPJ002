@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <section class="login">
+        <h1>Login</h1>
+        <section class="container">
+            <section class="top">
+                <img class='ico' src="Resources/2986196_google_media_plus_social_icon.png" alt="Google Login" srcset="">
+                <img class='ico' src="Resources/5282551_tweet_twitter_twitter logo_icon.png" alt="Twitter Login" srcset="">
+                <img class='ico' src="Resources/5282541_fb_social media_facebook_facebook logo_social network_icon.png" alt="Facebook" srcset="">
+                <img class='ico' src="Resources/104493_linkedin_icon.png" alt="LinkedIn" srcset="">
+                <img class='ico' src="Resources/4490604_apple_internet_media_social_social media_icon.png" alt="Apple" srcset="">
+            </section>
+            <p class="divider"><span>Or</span></p>
+            <form id="form">
+                <label>E-mail</label>
+                <input id="email" type="email" placeholder="Enter your email" />
+                <label>Password</label>
+                <input id='password' type="password" placeholder="Enter your password" />
+                <section class="remember">
+                    <input type="checkbox" checked="checked" />
+                    <p>Remember Me</p>
+                </section>
+                <button type="submit">Log In</button>
+            </form>
+            <section class="bottom">
+                <p>Forget your password?</p>
+                <a href="#">Reset Password</a>
+            </section>
+            <p class="create" id="createAccountButton">Create Account</p>
+    </section>
+    <p id='errorMessage'></p>
+    <footer class="footerContainer">
+        <section class="footer">
+            <h3>Front-end User Creation To Test Form Validation:</h3>
+        </section>
+        <section class="formInformation">
+            <span>E-mail:</span>
+            <input id='newUserEmail' type="email" placeholder="Enter your email" />
+            <span>Password:</span>
+            <input id='newUserPassword' type="password" placeholder="Enter your password" />
+
+        </section>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

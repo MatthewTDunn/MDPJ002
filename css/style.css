@@ -1,0 +1,188 @@
+/* Import the POPPINS font family */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    /* color scheme https://www.canva.com/colors/color-palettes/summer-splash/ */
+    --backgroundColorPrimary: #ffffff;
+    --textPrimary: #000;
+    --textAccent: #8e05c2;
+    --borderPrimary: #333;
+    --backgroundForm: #fff;
+}
+
+
+*{
+    background-color: var(--backgroundColorPrimary);
+    font-family:Poppins,sans-serif;
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+a {
+    color: var(--textAccent);
+
+}
+
+img{
+    width:1rem;
+    height:1rem;
+}
+
+.login{
+    background-color: var(--backgroundColorPrimary);
+    color: var(--textPrimary);
+    height: 100vh;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    font-size: .8rem;
+    transition: all .5s;
+}
+
+.login h1{
+    text-align:center;
+    margin:-6rem 0 2rem;
+    font-size: 48px;
+}
+
+h2 {
+    text-align: center;
+    padding: 1rem;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    width:300px;
+    margin:auto;
+    box-shadow: 0px 0px 12px var(--borderPrimary);
+    border-radius: 8px;
+    background-color: var(--backgroundForm)
+}
+
+.top{
+    display:flex;
+    justify-content: space-between;
+    width:100%;
+
+}
+
+.divider {
+    width: 100%;
+    text-align:center;
+    border-bottom: 1px solid var(--textPrimary);
+    line-height: .1rem;
+    margin: 2rem 0;
+
+}
+
+span{
+    padding: 0 10px;
+    background-color: var(--backgroundForm);
+}
+
+form{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+}
+
+label{
+    margin:8px 0;
+    font-weight:600;
+}
+input{
+    padding: 8px;
+    margin-bottom:8px;
+    border-radius:6px;
+    border: 1px solid var(--backgroundColorPrimary);
+    background: var(--backgroundColorPrimary);
+    color: var(--textPrimary)
+
+}
+
+.remember{
+    display: flex;
+    align-items: center;
+    width:100%;
+}
+
+input[type=checkbox]:checked{
+    margin:0;
+    padding:0;
+
+}
+
+.remember p{
+    padding-left: 8px;
+}
+
+button{
+    background-color: var(--textAccent);
+    border: 1px solid var(--textAccent);
+    color: #fff;
+    margin: 16px 0;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+
+.bottom{
+    display:flex;
+    justify-content:space-between;
+    width:100%;
+    font-size:.8rem;
+}
+
+.create{
+    font-size: 1rem;
+    margin-top:1rem;
+    cursor: pointer;
+}
+
+.create:hover{
+    transition:1s;
+    color:#8e05c2;
+}
+
+@media screen and (max-width:478px){
+    .login{
+        width:95%;
+    }
+}
+
+footer{
+    border: solid var(--textAccent);
+    margin: 0 5em 5em 5em;
+    
+}
+
+.footer{
+    margin-bottom:50px;
+    display:flex;
+    justify-content: center;
+ 
+}
+
+.formInformation{
+    display:flex;
+    justify-content: center;
+
+}
+
+.formInformation span{
+    padding: 0.75em;
+}
+
+#errorMessage{
+    display:flex;
+    justify-content: center;
+    color:red;
+
+}
